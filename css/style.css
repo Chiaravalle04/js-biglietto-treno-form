@@ -1,0 +1,152 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Regole Generali */
+.text-white {
+    color: #fff;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.mar-t {
+    margin-top: 15px;
+}
+
+.m-top {
+    margin-top: 30px;
+}
+
+.d-none {
+    display: none;
+}
+
+/* Style */
+header {
+    height: 80px;
+    background-color: red;
+}
+
+header h1 {
+    color: #fff;
+    padding: 20px;
+}
+
+main {
+    height: calc(100vh - 80px);
+    background-image: url('https://www.fsnews.it/content/dam/fs_news/focus-2022/aprile/servizi/29_04_2022_Treni_vacanze_estive_2022_02.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .container {
+    width: 40%;
+    height: calc(100vh - 80px);
+    padding: 50px 30px;
+    background-color: #fff;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.my_p {
+    width: 50%;
+    height: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 15px;
+    line-height: 30px;
+    border-bottom: 2px solid black;
+}
+
+#warning {
+    text-align: center;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+.bold-red {
+    font-weight: bold;
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+select {
+    border: 2px solid black;
+}
+
+#ticket {
+    width: 55%;
+    background-color: #fff;
+    margin-right: 30px;
+    padding: 15px;
+}
+
+.my_ticket {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+}
+
+.pas_name {
+    width: 30%;
+    height: 100%;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+.my_col {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#generate {
+    display: inline-block;
+    width: 90px;
+    height: 40px;
+    border: 2px solid greenyellow;
+    border-radius: 20px;
+    background-color: greenyellow;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#cancel {
+    display: inline-block;
+    width: 90px;
+    height: 40px;
+    border: 2px solid red;
+    border-radius: 20px;
+    background-color: red;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}

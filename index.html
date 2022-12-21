@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Fontawesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+
+        <!--Style-->
+        <link rel="stylesheet" href="css/style.css">
+        <title>Calcolo Prezzo Biglietto Treno</title>
+    </head>
+    <body>
+
+        <header>
+
+            <h1>Calcolo Prezzo Biglietto Treno</h1>
+
+        </header>
+
+        <main>
+
+            <div class="container">
+
+                <div class="text">
+
+                    <form action="#" id="my_form">
+
+                        <label for="my_name" class="bold">
+                        
+                            Nome Cognome
+                        
+                        </label>
+    
+                        <div class="name_">
+    
+                            <input type="text" id="my_name" class="my_p mar-t" placeholder="Inserisci Nome e Cognome">
+    
+                        </div>
+    
+                        <label for="my_km" class="bold">
+                        
+                            Km da percorrere
+                        
+                        </label>
+    
+                        <div class="km_">
+    
+                            <input type="number" id="my_km" class="my_p mar-t" placeholder="Inserisci i Km che vuoi percorrere">
+    
+                        </div>
+
+                        <label for="age-range" class="bold">
+
+                            Fascia d'età:
+
+                        </label>
+
+                        <div class="ageRange_">
+
+                            <select name="age_range" id="age-range" class="mar-t">
+
+                                <option value="st">
+    
+                                    Standard
+    
+                                </option>
+    
+                                <option value="min">
+    
+                                    Minorenne
+                                    
+                                </option>
+    
+                                <option value="ov">
+    
+                                    Over 65
+                                    
+                                </option>
+    
+                            </select>
+
+                        </div>
+
+                        <div class="but_ m-top">
+
+                            <button type="button" id="generate">
+
+                                Genera
+    
+                            </button>
+    
+                            <button type="reset" id="cancel">
+    
+                                Annulla
+    
+                            </button>
+
+                        </div>
+
+                    </form>                    
+    
+                    
+
+                </div>
+
+                <div class="wrn">
+
+                    <p id="warning"> <span class="bold-red">AVVISO:</span> I viaggiatori con età inferiore ai <span class="bold-red">18 anni </span> riceveranno uno sconto del <span class="bold-red">20%</span> sul prezzo del biglietto, invece, i viaggiatori <span class="bold-red">over 65</span> riceveranno uno sconto del <span class="bold-red">40%</span> .</p>
+
+                </div>
+
+            </div>
+
+            <i id="my_arrow" class="fa-solid fa-arrow-right fa-2x text-white d-none"></i>
+
+            <div id="ticket" class="d-none">
+
+                <h2>DETTAGLIO PASSEGGERI</h2>
+
+                <div class="my_ticket">
+
+                    <div class="pas_name">
+
+                        <h2>NOME PASSEGGERO</h2>
+
+                        <p id="passenger_name">Nicolas Chiaravalle</p>
+
+                    </div>
+
+                    <div class="my_col">
+
+                        <h3>Offerta</h3>
+
+                        <p id="offert">Offerta standard</p>
+                        
+                    </div>
+
+                    <div class="my_col">
+
+                        <h3>Carrozza</h3>
+
+                        <p id="cab"></p>
+                        
+                    </div>
+
+                    <div class="my_col">
+
+                        <h3>Codice CP</h3>
+
+                        <p id="cp_code">54323</p>
+                        
+                    </div>
+
+                    <div class="my_col">
+
+                        <h3>Costo Biglietto</h3>
+
+                        <p id="price">20.00 €</p>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <script type="text/javascript" src="js/scripts.js">
+
+        </script>
+    </body>
+
+</html>
