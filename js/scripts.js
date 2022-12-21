@@ -63,7 +63,7 @@ myGenerate.addEventListener('click',
 
     document.getElementById('cab').innerHTML = Math.floor(Math.random() * 10) + 1;
 
-    document.getElementById('cp_code').innerHTML = Math.floor(Math.random() * 9999) + 9000;
+    document.getElementById('cp_code').innerHTML = Math.floor(Math.random() * (9999 - 9000 + 1)) + 9000;
 
     document.getElementById('price').innerHTML = totalPrice + ' €';
 
